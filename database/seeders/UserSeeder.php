@@ -12,10 +12,10 @@ class UserSeeder extends Seeder
     {
         // 1. Akun Admin
         $admin = User::updateOrCreate(
-            ['email' => 'mumarfaruq@gmail.com'],
+            ['email' => 'Admin@gmail.com'],
             [
-                'name' => 'Moh. Umar Faruq (Admin)',
-                'password' => Hash::make('PasswordBaru123!'),
+                'name' => 'Admin',
+                'password' => Hash::make('uf12345'),
             ]
         );
         $admin->syncRoles(['admin']); // Memastikan role admin selalu disinkronkan
